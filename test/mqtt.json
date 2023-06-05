@@ -1,0 +1,7 @@
+{ "mqttvars":[
+    { "var":"/sys/test/a", "qos":1, "mapping" : "p" },
+    { "var":"/sys/test/b", "qos":1, "mapping" : "p" },
+    { "var":"/sys/test/f", "qos":0, "mapping" : "p" },
+    { "var":"/sys/test/c", "qos":1, "mapping" : "s" }
+    ]
+}
