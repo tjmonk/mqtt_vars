@@ -8,9 +8,7 @@ project(mqttvars
 include(GNUInstallDirs)
 
 find_library ( LIB_RT rt REQUIRED )
-find_library ( LIB_VARSERVER varserver REQUIRED )
 find_library ( LIB_PTHREAD pthread REQUIRED )
-find_library ( LIB_TJSON tjson REQUIRED )
 find_library ( LIB_MQTTASYNC paho-mqtt3a REQUIRED )
 
 add_executable( ${PROJECT_NAME}
@@ -19,9 +17,9 @@ add_executable( ${PROJECT_NAME}
 
 target_link_libraries( ${PROJECT_NAME}
     ${LIB_RT}
-    ${LIB_VARSERVER}
+    varserver
     ${LIB_PTHREAD}
-    ${LIB_TJSON}
+    tjson
     ${LIB_MQTTASYNC}
 )
 
